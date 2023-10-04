@@ -19,7 +19,7 @@ end
 #initialize empty array of players
  players = []
 
-#create 50 player objects, each with a random score between 10 and 300
+#create 50 player objects, each with a name in the format of "Player N", where N is 1 through 50, and a random score between 10 and 300
  for i in 1..50 do
 
       players << Player.new("Player " + i.to_s,rand(10..300))
