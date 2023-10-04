@@ -18,13 +18,13 @@ end
 
  for i in 1..50 do
 
-      players << Player.new(i,rand(10..300))
+      players << Player.new("Player " + i.to_s,rand(10..300))
     
  end
 
 
  for i in 0..players.length()-1 do
 
-    printf(players[i].get_name().to_s + " "+ players[i].get_score.to_s + "\n" )
+    printf("Ready " + players[i].get_name() + "! "+ "Score: " + players[i].get_score.to_s + "\n\n" )
 
  end
